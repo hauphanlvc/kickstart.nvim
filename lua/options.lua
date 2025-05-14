@@ -19,9 +19,9 @@ end)
 vim.opt.breakindent = true
 
 -- Tab settings
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
 -- Save undo history
@@ -42,3 +42,9 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
+
+-- Provides tab-completion for all file-related tasks by adding '**' to the path
+vim.opt.path:append '**'
+
+-- Display all matching files when we tab complete
+vim.opt.wildmenu = true
