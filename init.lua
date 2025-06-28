@@ -166,8 +166,8 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 -- Set fold method
-vim.o.foldmethod = 'indent'
-vim.o.foldenable = true
+-- vim.o.foldmethod = 'indent'
+-- vim.o.foldenable = true
 -- vim.api.nvim_create_autocmd('BufWinLeave', {
 --   pattern = '*',
 --   command = 'mkview',
